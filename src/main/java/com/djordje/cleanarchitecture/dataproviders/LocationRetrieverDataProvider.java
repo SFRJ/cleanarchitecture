@@ -9,7 +9,6 @@ import static java.util.Arrays.asList;
 
 public class LocationRetrieverDataProvider implements LocationRetriever{
 
-    @Autowired
     public LocationRetrieverDataProvider() {
     }
 

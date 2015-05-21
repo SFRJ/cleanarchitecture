@@ -1,9 +1,169 @@
-2015-05-21T16:43:34.813 INFO  [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
-2015-05-21T16:43:34.817 INFO  [org.quartz.simpl.SimpleThreadPool] Job execution threads will use class loader of thread: main
-2015-05-21T16:43:34.829 INFO  [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2015-05-21T16:43:34.829 INFO  [org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.1 created.
-2015-05-21T16:43:34.830 INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
-2015-05-21T16:43:34.831 INFO  [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+2015-05-21T18:25:30.124 DEBUG [org.springframework.core.env.StandardEnvironment] Adding [systemProperties] PropertySource with lowest search precedence
+2015-05-21T18:25:30.126 DEBUG [org.springframework.core.env.StandardEnvironment] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-05-21T18:25:30.126 DEBUG [org.springframework.core.env.StandardEnvironment] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-05-21T18:25:30.130 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Thu May 21 18:25:30 BST 2015]; root of context hierarchy
+2015-05-21T18:25:30.160 DEBUG [org.springframework.core.env.StandardEnvironment] Adding [systemProperties] PropertySource with lowest search precedence
+2015-05-21T18:25:30.160 DEBUG [org.springframework.core.env.StandardEnvironment] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-05-21T18:25:30.160 DEBUG [org.springframework.core.env.StandardEnvironment] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-05-21T18:25:30.171 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-config.xml]
+2015-05-21T18:25:30.190 DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2015-05-21T18:25:30.218 TRACE [org.springframework.beans.factory.xml.PluggableSchemaResolver] Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd]
+2015-05-21T18:25:30.218 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] Loading schema mappings from [META-INF/spring.schemas]
+2015-05-21T18:25:30.224 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2015-05-21T18:25:30.225 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+2015-05-21T18:25:30.261 TRACE [org.springframework.beans.factory.xml.PluggableSchemaResolver] Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context-2.5.xsd]
+2015-05-21T18:25:30.261 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] Found XML schema [http://www.springframework.org/schema/context/spring-context-2.5.xsd] in classpath: org/springframework/context/config/spring-context-2.5.xsd
+2015-05-21T18:25:30.266 TRACE [org.springframework.beans.factory.xml.PluggableSchemaResolver] Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool-2.5.xsd]
+2015-05-21T18:25:30.267 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] Found XML schema [http://www.springframework.org/schema/tool/spring-tool-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-2.5.xsd
+2015-05-21T18:25:30.274 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] Loading bean definitions
+2015-05-21T18:25:30.282 DEBUG [org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2015-05-21T18:25:30.296 DEBUG [org.springframework.core.env.StandardEnvironment] Adding [systemProperties] PropertySource with lowest search precedence
+2015-05-21T18:25:30.296 DEBUG [org.springframework.core.env.StandardEnvironment] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-05-21T18:25:30.297 DEBUG [org.springframework.core.env.StandardEnvironment] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-05-21T18:25:30.311 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Looking for matching resources in directory tree [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture]
+2015-05-21T18:25:30.312 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Searching directory [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture] for files matching pattern [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/**/*.class]
+2015-05-21T18:25:30.313 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Searching directory [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/configuration] for files matching pattern [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/**/*.class]
+2015-05-21T18:25:30.314 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Searching directory [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core] for files matching pattern [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/**/*.class]
+2015-05-21T18:25:30.314 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Searching directory [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider] for files matching pattern [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/**/*.class]
+2015-05-21T18:25:30.315 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Searching directory [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/domain] for files matching pattern [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/**/*.class]
+2015-05-21T18:25:30.315 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Searching directory [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/usecase] for files matching pattern [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/**/*.class]
+2015-05-21T18:25:30.316 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Searching directory [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders] for files matching pattern [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/**/*.class]
+2015-05-21T18:25:30.316 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Searching directory [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/entrypoints] for files matching pattern [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/**/*.class]
+2015-05-21T18:25:30.318 DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] Resolved location pattern [classpath*:com/djordje/cleanarchitecture/**/*.class] to resources [file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/configuration/HelloWorld.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/configuration/WhatsTheTimeConfiguration.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/LocationRetriever.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/TimeOutputRenderer.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/TimeRetriever.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/domain/TimeReport.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/usecase/WhatsTheTime.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/LocationRetrieverDataProvider.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/TimeOutputRendererDataProvider.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/TimeRetrieverDataProvider.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/entrypoints/WhatsTheTimeManager.class], file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/JobRunner.class]]
+2015-05-21T18:25:30.318 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/configuration/HelloWorld.class]
+2015-05-21T18:25:30.329 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/configuration/HelloWorld.class]
+2015-05-21T18:25:30.330 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/configuration/WhatsTheTimeConfiguration.class]
+2015-05-21T18:25:30.339 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Identified candidate component class: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/configuration/WhatsTheTimeConfiguration.class]
+2015-05-21T18:25:30.339 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/LocationRetriever.class]
+2015-05-21T18:25:30.339 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/LocationRetriever.class]
+2015-05-21T18:25:30.339 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/TimeOutputRenderer.class]
+2015-05-21T18:25:30.340 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/TimeOutputRenderer.class]
+2015-05-21T18:25:30.340 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/TimeRetriever.class]
+2015-05-21T18:25:30.340 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/dataprovider/TimeRetriever.class]
+2015-05-21T18:25:30.340 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/domain/TimeReport.class]
+2015-05-21T18:25:30.340 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/domain/TimeReport.class]
+2015-05-21T18:25:30.340 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/usecase/WhatsTheTime.class]
+2015-05-21T18:25:30.342 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Identified candidate component class: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/core/usecase/WhatsTheTime.class]
+2015-05-21T18:25:30.342 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/LocationRetrieverDataProvider.class]
+2015-05-21T18:25:30.342 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/LocationRetrieverDataProvider.class]
+2015-05-21T18:25:30.343 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/TimeOutputRendererDataProvider.class]
+2015-05-21T18:25:30.343 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/TimeOutputRendererDataProvider.class]
+2015-05-21T18:25:30.343 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/TimeRetrieverDataProvider.class]
+2015-05-21T18:25:30.343 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/dataproviders/TimeRetrieverDataProvider.class]
+2015-05-21T18:25:30.343 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/entrypoints/WhatsTheTimeManager.class]
+2015-05-21T18:25:30.343 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/entrypoints/WhatsTheTimeManager.class]
+2015-05-21T18:25:30.343 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Scanning file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/JobRunner.class]
+2015-05-21T18:25:30.344 TRACE [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] Ignored because not matching any filter: file [/Users/dev/Documents/cleanarchitecture/target/classes/com/djordje/cleanarchitecture/JobRunner.class]
+2015-05-21T18:25:30.358 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loaded 6 bean definitions from location pattern [/spring-config.xml]
+2015-05-21T18:25:30.359 DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: org.springframework.beans.factory.support.DefaultListableBeanFactory@63e2203c: defining beans [whatsTheTimeConfiguration,whatsTheTime,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor]; root of factory hierarchy
+2015-05-21T18:25:30.368 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-05-21T18:25:30.368 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-05-21T18:25:30.380 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2015-05-21T18:25:30.381 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-05-21T18:25:30.407 DEBUG [org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader] Registering bean definition for @Bean method com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration.locationRetrieverDataProvider()
+2015-05-21T18:25:30.408 DEBUG [org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader] Registering bean definition for @Bean method com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration.timeRetrieverDataProvider()
+2015-05-21T18:25:30.408 DEBUG [org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader] Registering bean definition for @Bean method com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration.timeOutputRenderer()
+2015-05-21T18:25:30.409 DEBUG [org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader] Registering bean definition for @Bean method com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration.whatsTheTimeManager()
+2015-05-21T18:25:30.463 DEBUG [org.springframework.context.annotation.ConfigurationClassEnhancer] Successfully enhanced com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration; enhanced class name is: com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration$$EnhancerBySpringCGLIB$$1a396947
+2015-05-21T18:25:30.463 DEBUG [org.springframework.context.annotation.ConfigurationClassPostProcessor] Replacing bean definition 'whatsTheTimeConfiguration' existing class name 'com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration' with enhanced class name 'com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration$$EnhancerBySpringCGLIB$$1a396947'
+2015-05-21T18:25:30.466 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-05-21T18:25:30.467 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-05-21T18:25:30.468 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2015-05-21T18:25:30.468 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-05-21T18:25:30.468 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-05-21T18:25:30.468 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-05-21T18:25:30.468 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2015-05-21T18:25:30.468 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-05-21T18:25:30.469 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-05-21T18:25:30.469 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-05-21T18:25:30.472 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2015-05-21T18:25:30.472 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-05-21T18:25:30.472 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-05-21T18:25:30.472 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-05-21T18:25:30.472 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2015-05-21T18:25:30.472 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-05-21T18:25:30.472 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-05-21T18:25:30.472 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-05-21T18:25:30.473 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2015-05-21T18:25:30.473 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-05-21T18:25:30.475 DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@78a2da20]
+2015-05-21T18:25:30.476 DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3d36e4cd]
+2015-05-21T18:25:30.479 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63e2203c: defining beans [whatsTheTimeConfiguration,whatsTheTime,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,locationRetrieverDataProvider,timeRetrieverDataProvider,timeOutputRenderer,whatsTheTimeManager]; root of factory hierarchy
+2015-05-21T18:25:30.479 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'whatsTheTimeConfiguration'
+2015-05-21T18:25:30.479 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'whatsTheTimeConfiguration'
+2015-05-21T18:25:30.483 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'whatsTheTimeConfiguration' to allow for resolving potential circular references
+2015-05-21T18:25:30.485 TRACE [org.springframework.core.io.support.SpringFactoriesLoader] Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2015-05-21T18:25:30.486 TRACE [org.springframework.beans.CachedIntrospectionResults] Getting BeanInfo for class [com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration$$EnhancerBySpringCGLIB$$1a396947]
+2015-05-21T18:25:30.489 TRACE [org.springframework.beans.CachedIntrospectionResults] Caching PropertyDescriptors for class [com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration$$EnhancerBySpringCGLIB$$1a396947]
+2015-05-21T18:25:30.489 TRACE [org.springframework.beans.CachedIntrospectionResults] Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2015-05-21T18:25:30.491 TRACE [org.springframework.beans.CachedIntrospectionResults] Found bean property 'class' of type [java.lang.Class]
+2015-05-21T18:25:30.492 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'whatsTheTimeConfiguration'
+2015-05-21T18:25:30.493 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'whatsTheTime'
+2015-05-21T18:25:30.493 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'whatsTheTime'
+2015-05-21T18:25:30.500 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'timeRetrieverDataProvider'
+2015-05-21T18:25:30.500 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'timeRetrieverDataProvider'
+2015-05-21T18:25:30.500 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'whatsTheTimeConfiguration'
+2015-05-21T18:25:30.512 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'timeRetrieverDataProvider' to allow for resolving potential circular references
+2015-05-21T18:25:30.512 TRACE [org.springframework.beans.CachedIntrospectionResults] Getting BeanInfo for class [com.djordje.cleanarchitecture.dataproviders.TimeRetrieverDataProvider]
+2015-05-21T18:25:30.513 TRACE [org.springframework.beans.CachedIntrospectionResults] Caching PropertyDescriptors for class [com.djordje.cleanarchitecture.dataproviders.TimeRetrieverDataProvider]
+2015-05-21T18:25:30.513 TRACE [org.springframework.beans.CachedIntrospectionResults] Found bean property 'class' of type [java.lang.Class]
+2015-05-21T18:25:30.514 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'timeRetrieverDataProvider'
+2015-05-21T18:25:30.514 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'timeOutputRenderer'
+2015-05-21T18:25:30.515 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'timeOutputRenderer'
+2015-05-21T18:25:30.515 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'whatsTheTimeConfiguration'
+2015-05-21T18:25:30.515 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'timeOutputRenderer' to allow for resolving potential circular references
+2015-05-21T18:25:30.515 TRACE [org.springframework.beans.CachedIntrospectionResults] Getting BeanInfo for class [com.djordje.cleanarchitecture.dataproviders.TimeOutputRendererDataProvider]
+2015-05-21T18:25:30.516 TRACE [org.springframework.beans.CachedIntrospectionResults] Caching PropertyDescriptors for class [com.djordje.cleanarchitecture.dataproviders.TimeOutputRendererDataProvider]
+2015-05-21T18:25:30.516 TRACE [org.springframework.beans.CachedIntrospectionResults] Found bean property 'class' of type [java.lang.Class]
+2015-05-21T18:25:30.517 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'timeOutputRenderer'
+2015-05-21T18:25:30.517 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Autowiring by type from bean name 'whatsTheTime' via constructor to bean named 'timeRetrieverDataProvider'
+2015-05-21T18:25:30.517 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Autowiring by type from bean name 'whatsTheTime' via constructor to bean named 'timeOutputRenderer'
+2015-05-21T18:25:30.518 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'whatsTheTime' to allow for resolving potential circular references
+2015-05-21T18:25:30.518 TRACE [org.springframework.beans.CachedIntrospectionResults] Getting BeanInfo for class [com.djordje.cleanarchitecture.core.usecase.WhatsTheTime]
+2015-05-21T18:25:30.520 TRACE [org.springframework.beans.CachedIntrospectionResults] Caching PropertyDescriptors for class [com.djordje.cleanarchitecture.core.usecase.WhatsTheTime]
+2015-05-21T18:25:30.520 TRACE [org.springframework.beans.CachedIntrospectionResults] Found bean property 'class' of type [java.lang.Class]
+2015-05-21T18:25:30.520 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'whatsTheTime'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'locationRetrieverDataProvider'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'locationRetrieverDataProvider'
+2015-05-21T18:25:30.521 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'whatsTheTimeConfiguration'
+2015-05-21T18:25:30.522 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'locationRetrieverDataProvider' to allow for resolving potential circular references
+2015-05-21T18:25:30.522 TRACE [org.springframework.beans.CachedIntrospectionResults] Getting BeanInfo for class [com.djordje.cleanarchitecture.dataproviders.LocationRetrieverDataProvider]
+2015-05-21T18:25:30.523 TRACE [org.springframework.beans.CachedIntrospectionResults] Caching PropertyDescriptors for class [com.djordje.cleanarchitecture.dataproviders.LocationRetrieverDataProvider]
+2015-05-21T18:25:30.523 TRACE [org.springframework.beans.CachedIntrospectionResults] Found bean property 'class' of type [java.lang.Class]
+2015-05-21T18:25:30.524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'locationRetrieverDataProvider'
+2015-05-21T18:25:30.524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'timeRetrieverDataProvider'
+2015-05-21T18:25:30.524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'timeOutputRenderer'
+2015-05-21T18:25:30.524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating shared instance of singleton bean 'whatsTheTimeManager'
+2015-05-21T18:25:30.524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Creating instance of bean 'whatsTheTimeManager'
+2015-05-21T18:25:30.524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'whatsTheTimeConfiguration'
+2015-05-21T18:25:30.525 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'whatsTheTime'
+2015-05-21T18:25:30.525 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'locationRetrieverDataProvider'
+2015-05-21T18:25:30.525 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Autowiring by type from bean name 'whatsTheTimeManager' via factory method to bean named 'whatsTheTime'
+2015-05-21T18:25:30.525 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Autowiring by type from bean name 'whatsTheTimeManager' via factory method to bean named 'locationRetrieverDataProvider'
+2015-05-21T18:25:30.526 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Eagerly caching bean 'whatsTheTimeManager' to allow for resolving potential circular references
+2015-05-21T18:25:30.527 TRACE [org.springframework.beans.CachedIntrospectionResults] Getting BeanInfo for class [com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager]
+2015-05-21T18:25:30.528 TRACE [org.springframework.beans.CachedIntrospectionResults] Caching PropertyDescriptors for class [com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager]
+2015-05-21T18:25:30.528 TRACE [org.springframework.beans.CachedIntrospectionResults] Found bean property 'class' of type [java.lang.Class]
+2015-05-21T18:25:30.528 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Finished creating instance of bean 'whatsTheTimeManager'
+2015-05-21T18:25:30.529 DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@2aece37d]
+2015-05-21T18:25:30.529 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] Returning cached instance of singleton bean 'lifecycleProcessor'
+2015-05-21T18:25:30.529 TRACE [org.springframework.context.support.ClassPathXmlApplicationContext] Publishing event in org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Thu May 21 18:25:30 BST 2015]; root of context hierarchy]
+2015-05-21T18:25:30.531 TRACE [org.springframework.core.env.PropertySourcesPropertyResolver] getProperty("spring.liveBeansView.mbeanDomain", String)
+2015-05-21T18:25:30.531 DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2015-05-21T18:25:30.531 DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2015-05-21T18:25:30.531 DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2015-05-21T18:25:30.564 INFO  [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2015-05-21T18:25:30.567 INFO  [org.quartz.simpl.SimpleThreadPool] Job execution threads will use class loader of thread: main
+2015-05-21T18:25:30.577 INFO  [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2015-05-21T18:25:30.578 INFO  [org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.1 created.
+2015-05-21T18:25:30.579 INFO  [org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2015-05-21T18:25:30.580 INFO  [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -11,185 +171,38 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2015-05-21T16:43:34.831 INFO  [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
-2015-05-21T16:43:34.831 INFO  [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.1
-2015-05-21T16:43:34.832 INFO  [org.quartz.core.QuartzScheduler] Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
-2015-05-21T16:43:34.832 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
-2015-05-21T16:43:34.834 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:34.836 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:34.838 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:34.839 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:34.839 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:34.841 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:35.691 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:35.692 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:35.692 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:35.692 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:35.692 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:35.831 DEBUG [org.quartz.utils.UpdateChecker] Checking for available updated version of Quartz...
-2015-05-21T16:43:36.691 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:36.691 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:36.691 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:36.691 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:36.692 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:37.692 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:37.693 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:37.693 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:37.693 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:37.693 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:38.692 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:38.692 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:38.692 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:38.692 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:38.693 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:39.692 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:39.692 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:39.692 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:39.692 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:39.692 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:40.691 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:40.691 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:40.691 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:40.693 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:40.693 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:41.692 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:41.693 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:41.693 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:41.693 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:41.693 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:42.692 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:42.692 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:42.692 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:42.692 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:42.693 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:43.692 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:43.692 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:43.692 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:43.693 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:43.693 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
-2015-05-21T16:43:44.692 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
-2015-05-21T16:43:44.692 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
-2015-05-21T16:43:44.692 DEBUG [org.quartz.core.JobRunShell] Calling execute on job jobsGroup1.whatsTheTime
-2015-05-21T16:43:44.692 ERROR [org.quartz.core.JobRunShell] Job jobsGroup1.whatsTheTime threw an unhandled Exception: 
-java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-2015-05-21T16:43:44.693 ERROR [org.quartz.core.ErrorLogger] Job (jobsGroup1.whatsTheTime threw an exception.
-org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
-	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
-Caused by: java.lang.NullPointerException
-	at com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.execute(WhatsTheTimeManager.java:23)
-	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
-	... 1 more
+2015-05-21T18:25:30.581 INFO  [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2015-05-21T18:25:30.581 INFO  [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.1
+2015-05-21T18:25:30.581 INFO  [org.quartz.core.QuartzScheduler] Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2015-05-21T18:25:30.581 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:25:30.583 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 1 triggers
+2015-05-21T18:25:30.585 DEBUG [org.quartz.simpl.PropertySettingJobFactory] Producing instance of Job 'jobsGroup1.whatsTheTime', class=com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
+2015-05-21T18:25:30.586 ERROR [org.quartz.core.ErrorLogger] An error occured instantiating job to be executed. job= 'jobsGroup1.whatsTheTime'
+org.quartz.SchedulerException: Problem instantiating class 'com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager' [See nested exception: java.lang.InstantiationException: com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager]
+	at org.quartz.simpl.SimpleJobFactory.newJob(SimpleJobFactory.java:58)
+	at org.quartz.simpl.PropertySettingJobFactory.newJob(PropertySettingJobFactory.java:69)
+	at org.quartz.core.JobRunShell.initialize(JobRunShell.java:127)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:375)
+Caused by: java.lang.InstantiationException: com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager
+	at java.lang.Class.newInstance(Class.java:418)
+	at org.quartz.simpl.SimpleJobFactory.newJob(SimpleJobFactory.java:56)
+	... 3 more
+Caused by: java.lang.NoSuchMethodException: com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3069)
+	at java.lang.Class.newInstance(Class.java:403)
+	... 4 more
+2015-05-21T18:25:30.589 INFO  [org.quartz.simpl.RAMJobStore] All triggers of Job jobsGroup1.whatsTheTime set to ERROR state.
+2015-05-21T18:25:30.589 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:25:31.579 DEBUG [org.quartz.utils.UpdateChecker] Checking for available updated version of Quartz...
+2015-05-21T18:25:59.589 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:26:23.320 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:26:51.247 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:27:14.626 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:27:44.486 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:28:11.389 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:28:36.186 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:28:59.228 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:29:23.644 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:29:52.658 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:30:19.296 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers
+2015-05-21T18:30:42.697 DEBUG [org.quartz.core.QuartzSchedulerThread] batch acquisition of 0 triggers

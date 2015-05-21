@@ -11,9 +11,6 @@ public class WhatsTheTimeManager implements Job {
     private WhatsTheTime usecase;
     private LocationRetriever locationDataProvider;
 
-    public WhatsTheTimeManager() {
-    }
-
     public WhatsTheTimeManager(WhatsTheTime usecase, LocationRetriever locationDataProvider) {
         this.usecase = usecase;
         this.locationDataProvider = locationDataProvider;

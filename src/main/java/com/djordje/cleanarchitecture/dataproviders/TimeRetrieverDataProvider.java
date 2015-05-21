@@ -9,7 +9,6 @@ import java.util.TimeZone;
 
 public class TimeRetrieverDataProvider implements TimeRetriever {
 
-    @Autowired
     public TimeRetrieverDataProvider() {
     }
 
