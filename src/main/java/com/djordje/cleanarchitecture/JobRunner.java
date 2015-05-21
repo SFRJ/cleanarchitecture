@@ -1,6 +1,5 @@
 package com.djordje.cleanarchitecture;
 
-import com.djordje.cleanarchitecture.configuration.HelloWorld;
 import com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
@@ -18,7 +17,10 @@ import static org.quartz.TriggerBuilder.newTrigger;
 public class JobRunner {
 
     public static void main(String[] args) throws SchedulerException {
+        //Initializes Spring
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("/spring-config.xml");
+
+        WhatsTheTimeManager whatsTheTimeManager;
 
         //TODO Find out how to use JobDetail with Spring
 

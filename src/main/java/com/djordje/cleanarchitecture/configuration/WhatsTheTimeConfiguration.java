@@ -2,6 +2,7 @@ package com.djordje.cleanarchitecture.configuration;
 
 import com.djordje.cleanarchitecture.core.dataprovider.LocationRetriever;
 import com.djordje.cleanarchitecture.core.dataprovider.TimeOutputRenderer;
+import com.djordje.cleanarchitecture.core.dataprovider.TimeRetriever;
 import com.djordje.cleanarchitecture.core.usecase.WhatsTheTime;
 import com.djordje.cleanarchitecture.dataproviders.LocationRetrieverDataProvider;
 import com.djordje.cleanarchitecture.dataproviders.TimeOutputRendererDataProvider;
@@ -12,14 +13,16 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class WhatsTheTimeConfiguration {
+//A configuration class, is a common way of injecting the beans in String.
+//Any constructor in the application will have automatically have injected any of this dependencies
 
     @Bean
-    public LocationRetrieverDataProvider locationRetrieverDataProvider() {
+    public LocationRetriever locationRetrieverDataProvider() {
         return new LocationRetrieverDataProvider();
     }
 
     @Bean
-    public TimeRetrieverDataProvider timeRetrieverDataProvider() {
+    public TimeRetriever timeRetrieverDataProvider() {
         return new TimeRetrieverDataProvider();
     }
 
