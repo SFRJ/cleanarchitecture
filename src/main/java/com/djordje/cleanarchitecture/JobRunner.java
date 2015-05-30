@@ -23,7 +23,7 @@ public class JobRunner {
         WhatsTheTimeManager whatsTheTimeManager;
 
         //TODO Find out how to use JobDetail with Spring
-
+        //http://stackoverflow.com/questions/6990767/inject-bean-reference-into-a-quartz-job-in-spring
         JobDetail whatsTheTime = newJob(WhatsTheTimeManager.class).withIdentity("whatsTheTime", "jobsGroup1").build();
 
         Trigger trigger = newTrigger()
