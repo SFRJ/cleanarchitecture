@@ -2,8 +2,9 @@ package com.djordje.cleanarchitecture.dataproviders;
 
 import com.djordje.cleanarchitecture.core.dataprovider.TimeOutputRenderer;
 import com.djordje.cleanarchitecture.core.domain.TimeReport;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TimeOutputRendererDataProvider implements TimeOutputRenderer {
 
     public TimeOutputRendererDataProvider() {

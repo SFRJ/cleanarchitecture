@@ -1,44 +1,39 @@
 package com.djordje.cleanarchitecture;
 
-import com.djordje.cleanarchitecture.entrypoints.WhatsTheTimeManager;
-import org.quartz.JobDetail;
-import org.quartz.Scheduler;
+import com.djordje.cleanarchitecture.configuration.WhatsTheTimeConfiguration;
 import org.quartz.SchedulerException;
-import org.quartz.SchedulerFactory;
-import org.quartz.Trigger;
-import org.quartz.impl.StdSchedulerFactory;
+import org.quartz.SimpleTrigger;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.scheduling.quartz.SchedulerFactoryBean;
+import org.springframework.scheduling.quartz.SpringBeanJobFactory;
 
-import static org.quartz.JobBuilder.newJob;
 import static org.quartz.SimpleScheduleBuilder.simpleSchedule;
 import static org.quartz.TriggerBuilder.newTrigger;
 
 public class JobRunner {
 
     public static void main(String[] args) throws SchedulerException {
-        //Initializes Spring
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("/spring-config.xml");
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(WhatsTheTimeConfiguration.class);
+        AutowiringSpringBeanJobFactory autowiringSpringBeanJobFactory = new AutowiringSpringBeanJobFactory();
+        autowiringSpringBeanJobFactory.setApplicationContext(applicationContext);
 
-        WhatsTheTimeManager whatsTheTimeManager;
+        SpringBeanJobFactory springBeanJobFactory = new SpringBeanJobFactory();
 
-        //TODO Find out how to use JobDetail with Spring
-        //http://stackoverflow.com/questions/6990767/inject-bean-reference-into-a-quartz-job-in-spring
-        JobDetail whatsTheTime = newJob(WhatsTheTimeManager.class).withIdentity("whatsTheTime", "jobsGroup1").build();
+        SchedulerFactoryBean schedulerFactoryBean = new SchedulerFactoryBean();
+        schedulerFactoryBean.setTriggers(trigger());
+        schedulerFactoryBean.setJobFactory(springBeanJobFactory);
+        schedulerFactoryBean.start();
+    }
 
-        Trigger trigger = newTrigger()
+    private static SimpleTrigger trigger() {
+        return newTrigger()
                 .withIdentity("whatsTheTimeJobTrigger", "jobsGroup1")
                 .startNow()
                 .withSchedule(simpleSchedule()
                         .withIntervalInSeconds(1)
                         .repeatForever())
                 .build();
-
-        SchedulerFactory schedulerFactory = new StdSchedulerFactory();
-        Scheduler scheduler = schedulerFactory.getScheduler();
-        scheduler.start();
-
-        scheduler.scheduleJob(whatsTheTime, trigger);
     }
 
 }

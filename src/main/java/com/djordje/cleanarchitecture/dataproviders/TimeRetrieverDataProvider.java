@@ -1,12 +1,13 @@
 package com.djordje.cleanarchitecture.dataproviders;
 
 import com.djordje.cleanarchitecture.core.dataprovider.TimeRetriever;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
+@Component
 public class TimeRetrieverDataProvider implements TimeRetriever {
 
     public TimeRetrieverDataProvider() {
