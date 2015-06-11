@@ -1,4 +1,4 @@
-package com.djordje.cleanarchitecture.core.domain;
+package com.djordje.cleanarchitecture.core.entities;
 
 public class TimeReport {
 

@@ -1,7 +1,7 @@
 package com.djordje.cleanarchitecture.dataproviders;
 
 import com.djordje.cleanarchitecture.core.dataprovider.TimeOutputRenderer;
-import com.djordje.cleanarchitecture.core.domain.TimeReport;
+import com.djordje.cleanarchitecture.core.entities.TimeReport;
 import org.springframework.stereotype.Component;
 
 @Component
