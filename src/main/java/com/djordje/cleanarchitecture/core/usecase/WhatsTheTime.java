@@ -26,9 +26,9 @@ public class WhatsTheTime {
     }
 
     public void tellMeWhatsTheTimeIn(List<String> locations) {
-        locations.stream().map((location) -> {
+        for(String location : locations) {
             String time = timeRetriever.timeFor(location);
-            return timeOutputRenderer.renderReport(location, time);
-        });
+            timeOutputRenderer.renderReport(location, time);
+        };
     }
 }
